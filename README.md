@@ -6,11 +6,19 @@ A Python prototype that converts 2D photos or text prompts into 3D models (.ply)
 
 2. Ensure your folders are structured like:
 
-├── CODE/
-│   └── main.py
-├── DATA/
-│   └── toy.jpg  # or any input image
-├── RESULT/
+── CODE/
+
+    └── main.py
+
+
+── DATA/
+
+
+    └── toy.jpg  # or any input image
+
+
+── RESULT/
+
     └── Toy3D.ply  # Output mesh
 
 
@@ -48,8 +56,8 @@ pyplot (TkAgg backend) – used with Spyder IDE for inline plotting
 1. I started by resizing and formatting the 2D input image.
 
 2. Used a pretrained GLPN model to estimate depth, then converted the result into an Open3D-compatible RGBD image.
-
-3.Created a point cloud and cleaned it using statistical outlier removal.
+  
+3. Created a point cloud and cleaned it using statistical outlier removal.
 
 4. Estimated normals and generated a mesh using Poisson surface reconstruction.
 
