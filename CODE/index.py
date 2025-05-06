@@ -148,7 +148,9 @@ ax.set_title('3D Mesh Visualization')
 plt.tight_layout()
 plt.show()
 
-#plt.savefig("../RESULT/3D_mesh_plot.png")
+
+#Exporting the plot as png
+plt.savefig("../RESULT/3D_mesh_plot.png")
  
 
 
