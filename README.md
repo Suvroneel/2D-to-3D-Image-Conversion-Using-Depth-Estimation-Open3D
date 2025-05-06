@@ -19,8 +19,8 @@ A Python prototype that converts 2D photos or text prompts into 3D models (.ply)
 
 ── RESULT/
 
-    └── Toy3D.ply  # Output mesh
-
+    └── Toy3D.obj  # Output mesh
+    └── 3D_mesh_plot.png  # Output Visualization png image
 
 3. Create and activate your environment, then install dependencies:
 
