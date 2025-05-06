@@ -83,6 +83,7 @@ A Python prototype that converts 2D photos or text prompts into 3D models (.ply)
 ###  5. Visualization
 
 1. Generated an interactive 3D plot of the mesh using Matplotlib for quick validation.
+2. Due to hardware limitations, I was unable to display the interactive plot directly on my machine. To ensure the results are still accessible and reviewable, I exported the 3D visualization as a PNG image file, which is included in the repository and showcased below.
 
 # 4. Input and Output
 -  Input image 
@@ -106,3 +107,5 @@ https://github.com/user-attachments/assets/149820f3-5ef2-47de-927b-60077fd8c970
 -   Visualization
 
 ![Image](https://github.com/user-attachments/assets/8b06b175-742d-4f30-a20c-bb9233c53f82)
+
+*Note: The 3D mesh visualization was exported as a PNG file using Matplotlib, as my system could not render the interactive plot in real time. This approach ensures that the output remains accessible for review regardless of hardware limitations.*
