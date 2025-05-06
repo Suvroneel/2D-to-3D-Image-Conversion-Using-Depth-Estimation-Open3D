@@ -14,7 +14,7 @@ feature_extractor = GLPNImageProcessor.from_pretrained("vinvino02/glpn-nyu")
 model = GLPNForDepthEstimation.from_pretrained("vinvino02/glpn-nyu")
 
 #%% 3. Loadng Image
-#image =Image.open("../DATA/car.jpg")
+#image =Image.open("../DATA/car.jpg") (optional for testing)
 image =Image.open("../DATA/toy.jpg")
  
 new_height = 480 if image.height > 480 else image.height
