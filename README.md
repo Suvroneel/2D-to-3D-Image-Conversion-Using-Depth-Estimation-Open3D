@@ -52,6 +52,8 @@ pyplot (TkAgg backend) – used with Spyder IDE for inline plotting
 
 rembg – For automatic background removal from images
 
+onnxruntime – for running inference with ONNX models (required by  rembg)
+
 # 3. Thought Process
 
 1. I started by resizing and formatting the 2D input image.
