@@ -56,27 +56,53 @@ onnxruntime – for running inference with ONNX models (required by  rembg)
 
 # 3. Thought Process
 
-1. I started by resizing and formatting the 2D input image.
+###  1.  Input Image Preprocessing
 
-2. Used a pretrained GLPN model to estimate depth, then converted the result into an Open3D-compatible RGBD image.
-  
-3. Created a point cloud and cleaned it using statistical outlier removal.
+1. Loaded the input image and removed the background using rembg to isolate the foreground object.
 
-4. Estimated normals and generated a mesh using Poisson surface reconstruction.
+2. Resized the image and mask to fit the GLPN model’s input requirements while preserving aspect ratio.
 
-5. Rotated the mesh for better view alignment and exported it as a .ply file  for external viewing
+###  2. Depth Estimation
 
-6. A 3D graph of the generated mesh is visualized using Matplotlib. This provides an interactive way to view the 3D mesh, adding an extra layer of detail to the project.
+1. Used the pretrained GLPN model to generate a depth map from the masked image.
+
+2. Post-processed the depth map by cropping padding and applied the foreground mask to exclude background pixels.
+
+###  3. 3D Reconstruction
+
+1. Converted the masked image and depth map into an Open3D RGBD image.
+
+2. Created a point cloud from the RGBD data and cleaned it using statistical outlier removal to eliminate noise.
+
+###  4. Mesh Generation
+
+1. Estimated surface normals and reconstructed a 3D mesh using Poisson surface reconstruction.
+
+2. Rotated the mesh for better viewing alignment and exported it as a .obj file for external visualization.
+
+###  5. Visualization
+
+1. Generated an interactive 3D plot of the mesh using Matplotlib for quick validation.
 
 # 4. Input and Output
-Input image 
+-  Input image 
 
 
 
-<img src="https://github.com/user-attachments/assets/22b4049e-b60a-4999-804b-2a2d6d34b375" alt="Image" width="300">
+<img src="https://github.com/user-attachments/assets/22b4049e-b60a-4999-804b-2a2d6d34b375" alt="Image" width="300"></br>
 
 
-Output 3D image
+ 
+ 
+ 
+ -  Output 3D image
 
 
 https://github.com/user-attachments/assets/149820f3-5ef2-47de-927b-60077fd8c970
+
+
+
+
+-   Visualization
+
+![Image](https://github.com/user-attachments/assets/8b06b175-742d-4f30-a20c-bb9233c53f82)
