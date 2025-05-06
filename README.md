@@ -36,23 +36,23 @@ A Python prototype that converts 2D photos or text prompts into 3D models (.ply)
 
 # 2. Libraries Used 
 
-torch – for inference with the depth estimation model
+1. torch – For inference with the depth estimation model.
 
-transformers – to load GLPN model (vinvino02/glpn-nyu)
+2. transformers – To load the GLPN model (vinvino02/glpn-nyu).
 
-Pillow – for image loading and resizing
+3. Pillow – For image loading and resizing.
 
-matplotlib – for visualization
+4. matplotlib – For visualization.
 
-numpy – for processing image/depth data
+5. numpy – For processing image and depth data.
 
-open3d – for creating 3D point cloud and mesh
+6. open3d – For creating 3D point clouds and meshes.
 
-pyplot (TkAgg backend) – used with Spyder IDE for inline plotting
+7. pyplot (TkAgg backend) – Used with Spyder IDE for inline plotting.
 
-rembg – For automatic background removal from images
+8. rembg – For automatic background removal from images.
 
-onnxruntime – for running inference with ONNX models (required by  rembg)
+9. onnxruntime – For running inference with ONNX models (required by rembg).
 
 # 3. Thought Process
 
