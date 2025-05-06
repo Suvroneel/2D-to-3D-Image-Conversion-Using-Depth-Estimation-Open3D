@@ -22,7 +22,7 @@ A Python prototype that converts 2D photos or text prompts into 3D models (.ply)
     └── Toy3D.ply  # Output mesh
 
 
-3. Activate your environment, then install dependencies:
+3. Create and activate your environment, then install dependencies:
 
     > pip install -r requirements.txt
 
@@ -67,3 +67,16 @@ onnxruntime – for running inference with ONNX models (required by  rembg)
 5. Rotated the mesh for better view alignment and exported it as a .ply file  for external viewing
 
 6. A 3D graph of the generated mesh is visualized using Matplotlib. This provides an interactive way to view the 3D mesh, adding an extra layer of detail to the project.
+
+# 4. Input and Output
+Input image 
+
+
+
+<img src="https://github.com/user-attachments/assets/22b4049e-b60a-4999-804b-2a2d6d34b375" alt="Image" width="300">
+
+
+Output 3D image
+
+
+https://github.com/user-attachments/assets/149820f3-5ef2-47de-927b-60077fd8c970
