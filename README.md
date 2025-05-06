@@ -50,6 +50,7 @@ open3d – for creating 3D point cloud and mesh
 
 pyplot (TkAgg backend) – used with Spyder IDE for inline plotting
 
+rembg – For automatic background removal from images
 
 # 3. Thought Process
 
